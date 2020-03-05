@@ -37,7 +37,8 @@
             <h1>Cadastro de jogador</h1>
         </div>
 
-        <form action="" method="POST">
+       
+        <form action="" method="POST" class="form_cadastro">
             <div class="campo">
                 <label for="nome">nome do jogador : </label>
                 <input type="text" name="nomedojogador" id="nome"> 
@@ -65,7 +66,7 @@
 
             <div class="campo">
                 <label for="nascimento">repita a senha : </label>
-                <input type="date" name="nascimento" id="nascimento">
+                <input type="date" name="nascimento" id="nascimento" max="2020-03-05">
             </div>
 
             <div class="campo">
@@ -92,13 +93,13 @@
                 <input type="radio" name="sexo" value="N" id="NA">
                 <label for="NA">Prefiro Não dizer</label>
             </fieldset>
-            <div class="campo">
+            <div class="campo termos">
                 <input type="checkbox" name="check" id="check">
                 <label for="check">
                     Declaro que li e concordo com os termos de uso e politica de privacidade do site
                 </label>
             </div>
-            <button type="submit">Criar!!</button>
+            <button type="submit" class="=btn gradient">Criar!!</button>
         </form>
 
 
