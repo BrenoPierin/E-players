@@ -337,7 +337,14 @@ margin-left: 0.5em;
 .container{
     width: 90%;
 } 
-/* ----RESPONSABILIDADE DOS 1200PX----- */
+/* ---- FIM RESPONSABILIDADE DOS 1200PX----- */
+
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    padding: 0.5em;     
+    display: none;
+}
 }
 @media screen and (max-width: 768px){
 header img{
@@ -392,3 +399,42 @@ footer .container{
 
 }
 /* fim da responsividade 760 */
+
+@media screen and (max-width: 460px){
+    .cabecalho .fa-bars{
+        display: block;
+    }
+    .cabecalho nav{
+        position: absolute;
+        top: 64px;
+        background-color: black;
+        width: 100%;
+        display: none;
+    }
+    .cabecalho div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 2em;
+
+    }
+    #menu{
+
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height: 250px;
+        width: 100%;
+
+
+    }
+     .cabecalho ul a{
+         padding: 0.5em 95% 1em 0.5em;
+         margin: 0.1em 0;
+         margin-left: 2em;
+     }
+    .campea{
+        display: none;
+    }
+}
